@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_margin="8dp"
+                                   app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F1F3"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/pinName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hilton"
+                android:textColor="#3949AB"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:fontFamily="serif"
+                app:layout_constraintBottom_toTopOf="@+id/pin_desc"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="4dp"/>
+
+            <TextView
+                android:id="@+id/pin_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$21.00"
+                android:textColor="@color/header_text_color"
+                app:layout_constraintBottom_toTopOf="@+id/pin_desc"
+                tools:layout_editor_absoluteX="10dp"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
